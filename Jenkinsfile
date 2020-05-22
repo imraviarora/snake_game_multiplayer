@@ -11,11 +11,11 @@ node ('ubuntu-app-agent'){
          * docker build on the command line */
        app = docker.build("ravikumar7206/snake")
     }
-    stage('Post-to-dockerhub') {
+    /*stage('Post-to-dockerhub') {
        docker.withRegistry('https://registry.hub.docker.com', 'docker_hub_cred') {
               app.push("latest")
         			 }
-    }
+    }*/
   /*  stage('SECURITY-IMAGE-SCANNER'){
         build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCANNER'
     } */
