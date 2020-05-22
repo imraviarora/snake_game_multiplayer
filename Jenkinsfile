@@ -23,8 +23,8 @@ node ('master'){
         build 'SECURITY-IMAGE-SCANNER-AQUAMICROSCANNER'
     } */
     stage('Pull-image-server') {
-         sh 'Pull-image-to-server'
-         /*sh "docker-compose down"
+        sh 'Pull-image-to-server'
+         /* sh "docker-compose down"
          sh "docker-compose up -d"	*/
       }
     /*stage('DAST'){
